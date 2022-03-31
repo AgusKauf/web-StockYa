@@ -1,0 +1,487 @@
+/*Index*/
+
+*{
+
+    margin: 0; 
+    padding: 0;   
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+nav{
+
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar{
+
+    background-color: #D9D9D9;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+
+
+.navbar a{
+
+    text-decoration: none;
+    color: #202124 ;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.navbar_titulo{
+
+    text-decoration: none;
+    color: #202124;
+    display: inline-block;
+    position: absolute;
+    right: 93%;
+    font-size: 1.2rem;
+}
+
+
+.navbar_items li{
+
+    display: inline-block;
+    text-align: center;
+
+}
+
+
+#titulo{
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.titulo_index{
+
+    color: #F23838;
+    text-align: center;
+    font-size: 4rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.subtitulo_index{
+    color: #0D0D0D;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+
+}
+
+
+.subtitulo_index2{
+
+    color: #0D0D0D;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+}
+
+#card_index{
+
+    background-color: #A6A6A6;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+#card_index img{
+
+    display: inline-block;
+    padding: 1rem;
+    width: 25%;
+
+}
+
+#servicios{
+
+    height: 25rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+
+}
+
+#titulo_servicios{
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    
+}
+
+ .section_titulo{ 
+
+    color: #8C2020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    height: 400px;
+
+}
+
+.section_list {
+
+    color: #0D0D0D;
+    font-size: 2rem;
+    display: inline-block;
+
+}
+
+
+.section_list li{
+
+list-style: none; 
+padding: 2rem;
+
+}
+
+footer{
+
+    background-color: #0D0D0D;
+}
+
+
+.redes_footer {
+
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0rem 25rem 0rem 25rem;
+    padding-top: 1rem;
+    height: 20px;
+
+}
+
+
+.redes_footer a{
+
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1rem;
+}
+
+
+.navbar_footer{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+    padding-top: 1rem;
+}
+
+
+.navbar_footer li{
+    display: inline-block;
+    padding: 1rem;
+
+}
+
+.navbar_footer li a{
+
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1rem;
+
+}
+
+
+.rights_footer{
+
+    color: #D9D9D9;
+    display: flex;
+    height: 20px;
+    justify-content: start;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+
+.grid{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 300px 1400px 400px 110px;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "imagenes imagenes"
+    "titulo_serv servicios"
+    "footer footer"
+
+}
+
+header{
+
+    grid-area: header;
+}
+
+
+#titulo{
+
+    grid-area: titulo;
+}
+
+
+#card_index{
+
+    grid-area: imagenes;
+
+}
+
+
+#titulo_servicios{
+
+    grid-area: titulo_serv;
+}
+
+#servicios{
+
+    grid-area: servicios;
+    
+}
+
+footer{
+
+    grid-area: footer;
+}
+/*productos*/
+
+#titulo_prod h1{
+
+    color:  #0D0D0D;
+    text-align: left;
+    font-size: 2rem;
+    margin: 1rem;
+
+}
+
+#titulo_prod h3{
+
+    color:  #0D0D0D;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.aside h4{
+
+    font-size: 1.2rem;  
+    padding-top: 1rem; 
+    padding-bottom: 2rem;
+}
+
+.cat_list{
+
+    display: inline-block;
+    list-style-type: none;
+}
+
+.cat_list li{
+
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+.card_prod{
+
+    text-align: center;
+    margin: 0rem 4rem 0rem 4rem;
+
+}
+
+
+.card{
+
+    
+    width: 15rem;
+    margin: 2rem;
+    padding: 1rem;
+    display: inline-block;
+    border: solid;
+}
+
+.card img{
+
+    width: 100%;
+}
+
+.card h3{
+
+    text-align: center;
+}
+
+.card h5{
+
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+
+.grid_prod{
+
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: 60px 100px 800px 120px;
+    grid-template-areas: 
+    "header header"
+    "titulo_prod titulo_prod"
+    "aside productos"
+    "footer footer"
+
+}
+
+#titulo_prod{
+
+    grid-area: titulo_prod;
+
+}
+
+.aside{
+
+    grid-area: aside;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+
+
+}
+
+.card_prod{
+
+    grid-area: productos;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/*nosotros*/
+
+
+.quienes_titulo{
+
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.quienes_parra{
+
+    text-align: center;
+}
+
+.quienes img{
+
+    height: 20rem;
+}
+
+/*testimonios*/
+
+.form_test{
+
+    background-color: #8C8C8C;
+    text-align: center;
+    
+}
+
+.form_titulo{
+
+    padding: 1rem;
+    text-align: left;
+}
+
+.input{
+
+    display: block;
+    padding: 0.5rem;
+}
+
+.input_block{
+
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/*contacto*/
+
+.ubicacion{
+
+    text-align: center;
+
+}
+
+
+.ubicacion_titulo{
+
+
+}
+
+.ubicacion iframe{
+
+    height: 20rem;
+    width: 40%
+}
+
+.grid_cont{
+
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 60px 100px 700px 110px;
+    grid-template-areas: 
+    "header header"
+    "titulo_cont titulo_cont"
+    "formulario ubicacion"
+    "footer footer"
+
+}
+
+#titulo_cont{
+    grid-area: titulo_cont;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    height: 100;
+}
+
+#formulario{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion{
+    grid-area: ubicacion;
+}
+/*ID*/
+
