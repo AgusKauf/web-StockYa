@@ -94,9 +94,9 @@ nav{
 
 #card_index{
 
-    background-color: #A6A6A6;
+    background-color: #8C8C8C;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-evenly; 
     align-items: center; 
     flex-wrap: wrap;
 }
@@ -126,6 +126,7 @@ nav{
     flex-flow: column wrap;
     align-items: center;
     text-align: center;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148810113.jpg?t=st=1649035442~exp=1649036042~hmac=46f6d64fa1487785ddbd4791acfa6c72224681cbaab31446b9715a4c07cfb20f&w=1480);
     
 }
 
@@ -153,7 +154,14 @@ nav{
 
 list-style: none; 
 padding: 2rem;
+display: flex;
+align-items: center;
 
+}
+
+.icon_check{
+    color: #0D0D0D;
+    margin-right: 4rem;
 }
 
 footer{
@@ -166,20 +174,23 @@ footer{
 
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin: 0rem 25rem 0rem 25rem;
     padding-top: 1rem;
     height: 20px;
 
 }
 
+svg{
+    color: #D9D9D9;
+}
 
 .redes_footer a{
 
     text-decoration: none;
     color: #D9D9D9;
     font-size: 1rem;
+    padding: 2rem;
 }
 
 
@@ -233,6 +244,73 @@ footer{
 
 }
 
+@media screen and (max-width:480px){
+
+    .grid{
+        grid-template-columns: 3fr;
+        grid-template-rows: 60px 300px 600px 100px 400px 110px;
+        grid-template-areas:
+        "header"
+        "titulo"
+        "imagenes"
+        "titulo_serv"
+        "servicios"
+        "footer"
+    }
+
+    .navbar{
+        width: 480px;
+        text-align: center;
+    }
+
+    .navbar h3{
+
+        display: none;
+    }
+
+    .navbar a{
+        font-size: 1rem;
+    }
+
+
+    #titulo{
+        width: 480px;
+    }
+
+    #card_index{
+        width: 480px;
+    }
+
+    #titulo_servicios{
+        width: 480px;
+    }
+
+    #servicios{
+        width: 480px;
+        text-align: center;
+    }
+
+    .section_list li{
+
+        padding-top: 1rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .icon_check{
+        margin-right: 1rem;
+    }
+
+    footer{
+        width: 480px;
+    }
+
+    .redes_footer{
+        margin: 0rem;
+    }
+}
+
+
 header{
 
     grid-area: header;
@@ -242,6 +320,7 @@ header{
 #titulo{
 
     grid-area: titulo;
+
 }
 
 
@@ -271,7 +350,7 @@ footer{
 
 #titulo_prod h1{
 
-    color:  #0D0D0D;
+    color: #F23838;
     text-align: left;
     font-size: 2rem;
     margin: 1rem;
@@ -307,8 +386,7 @@ footer{
 .card_prod{
 
     text-align: center;
-    margin: 0rem 4rem 0rem 4rem;
-
+    margin: 0rem 1.5rem 0rem 1.5rem;
 }
 
 
@@ -316,8 +394,8 @@ footer{
 
     
     width: 15rem;
-    margin: 2rem;
-    padding: 1rem;
+    margin: 1rem;
+    padding: 2rem;
     display: inline-block;
     border: solid;
 }
@@ -342,8 +420,8 @@ footer{
 .grid_prod{
 
     display: grid;
-    grid-template-columns: 0.4fr 2fr;
-    grid-template-rows: 60px 100px 800px 120px;
+    grid-template-columns: 0.3fr 2fr;
+    grid-template-rows: 60px 120px 900px 120px;
     grid-template-areas: 
     "header header"
     "titulo_prod titulo_prod"
@@ -352,10 +430,59 @@ footer{
 
 }
 
+@media screen and (max-width: 480px){
+
+    .grid_prod{
+        grid-template-columns: 3fr;
+        grid-template-rows: 60px 120px 100px 2500px 120px;
+        grid-template-areas:
+        "header"
+        "titulo_prod"
+        "aside"
+        "productos"
+        "footer"
+    }
+
+    .navbar{
+        width: 480px;
+    }
+
+    #titulo_prod{
+        width: 480px;
+    }
+
+    .aside{
+        width: 480px;
+    }
+
+    .aside h4{
+        font-weight: bold;
+    }
+
+    .aside li{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .card_prod{
+        width: 480px;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    footer{
+        width: 480px;
+    }
+}
+    
+
 #titulo_prod{
 
     grid-area: titulo_prod;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .aside{
@@ -366,11 +493,6 @@ footer{
     flex-direction: column;
     align-items: center;
     height: 200px;
-    width: auto;
-    margin-top: 1rem;
-    margin-left: 1rem;
-
-
 
 }
 
@@ -381,10 +503,17 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 /*nosotros*/
 
+#titulo_nos h1{
+    
+    color: #F23838;
+    text-align: left;
+    font-size: 2rem;
+    margin: 1rem;
+}
 
 .quienes_titulo{
 
@@ -398,9 +527,60 @@ footer{
     text-align: center;
 }
 
-.quienes img{
+.imagen_nos img{
 
-    height: 20rem;
+    height: 250px;
+    width: 250px;
+}
+
+#showroom_titulo{
+
+    text-align: center;
+}
+
+#showroom_fotos img{
+    height: 300px;
+    width: 300px;
+}
+
+.grid_nos{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60px 90px 300px 800px 120px;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "imagen_q quienes"
+    "showroom showroom"
+    "footer footer"
+}
+
+#titulo_nos{
+
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienes{
+    grid-area: quienes;
+}
+
+.imagen_nos{
+    grid-area: imagen_q;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showroom{
+    grid-area: showroom;
+}
+
+#fotos_local{
+    grid-area: imagen_l;
 }
 
 /*testimonios*/
