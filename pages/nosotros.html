@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body class="grid_nos">
+<body class="container-fluid grid_nos">
 
-    <header class="navbar">
+    <header class="row navbar">
     <!--menu navegador-->
-    <nav>
+    <nav class="col-lg-12">
         <h3 class="navbar_titulo">Stock Ya!</h3>
         <ul class="navbar_items">
             <li><a href="../index.html">Inicio</a></li>
@@ -38,35 +38,68 @@
     </nav>
     </header>
 
-    <div id="titulo_nos">
-        <h1 class="titulo_prod">Nosotros</h1>
+    <div id="titulo_nos" class="row">
+        <h1 class="titulo_prod col-lg-12">Nosotros</h1>
     </div>
     
 
-    <section class="quienes">
-    <h3 class="quienes_titulo">¿Quiénes somos?</h3>
-    <p class="quienes_parra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe ipsam reprehenderit adipisci odit? Quaerat,
-        tenetur, ipsa eligendi magnam eveniet assumenda praesentium non sit sequi suscipit voluptate sed iste magni?</p>
+    <section class="row quienes">
+
+        <div class="imagen_nos col-lg-4">
+            <img src="../images/Logo.png" alt="Local_1">
+        </div>
+
+        <div class="col-lg-8">
+            <h3 class="quienes_titulo">¿Quiénes somos?</h3>
+            <p class="quienes_parra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe ipsam reprehenderit adipisci odit? Quaerat,
+                tenetur, ipsa eligendi magnam eveniet assumenda praesentium non sit sequi suscipit voluptate sed iste magni?</p>
+        </div>
     </section>
 
-    <div class="imagen_nos">
-        <img src="../images/Logo.png" alt="Local_1">
-    </div>
-
-
-    <main id="showroom">
-        <div id="showroom_titulo">
+    <main id="showroom" class="row">
+        <div id="showroom_titulo" class="col-lg-12">
             <h3>Nuestro showroom</h3>
         </div>
 
-        <div id="showroom_fotos">
+<!--         <div id="showroom_fotos" class="col-lg-12">
             <img src="../images/Local_1.jpeg" alt="Local_1">
             <img src="../images/Local_2.jpeg" alt="Local_2">
             <img src="../images/Local_3.jpeg" alt="Local_3">
             <img src="../images/Local_4.jpeg" alt="Local_4">
             <img src="../images/Local_5.jpeg" alt="Local_5">
             <img src="../images/Local_6.jpeg" alt="Local_6">
-        </div>
+        </div> -->
+
+        <div id="carouselExampleControls" class="row carousel slide slider_n" data-bs-ride="carousel">
+            <div class="slider carousel-inner col-lg-6">
+              <div class="carousel-item active">
+                <img src="../images/Local_1.jpeg" class="d-block w-100" alt="Local_1">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/Local_2.jpeg" class="d-block w-100" alt="Local_2">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/Local_3.jpeg" class="d-block w-100" alt="Local_3">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/Local_4.jpeg" class="d-block w-100" alt="Local_4">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/Local_5.jpeg" class="d-block w-100" alt="Local_5">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/Local_6.jpeg" class="d-block w-100" alt="Local_6">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
 
 <footer>

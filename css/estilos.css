@@ -71,7 +71,7 @@ nav{
     color: #F23838;
     text-align: center;
     font-size: 4rem;
-    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    padding: 4rem 1.5rem 1.5rem 1.5rem;
 }
 
 .subtitulo_index{
@@ -113,6 +113,7 @@ nav{
 
     margin-left: 5rem;
     margin-right: 5rem;
+    position: flex;
 }
 
 .slider img{
@@ -139,27 +140,30 @@ nav{
     flex-flow: column wrap;
     align-items: center;
     text-align: center;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148810113.jpg?t=st=1649035442~exp=1649036042~hmac=46f6d64fa1487785ddbd4791acfa6c72224681cbaab31446b9715a4c07cfb20f&w=1480);
     
 }
 
  .section_titulo{ 
 
-    color: #8C2020;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    height: 400px;
+    background-color:#8C8C8C;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
 
 }
+
+
 
 .section_list {
 
     color: #0D0D0D;
     font-size: 2rem;
     display: inline-block;
-
+    margin-top: 2rem;
 }
 
 
@@ -176,7 +180,7 @@ transition: all 1s;
 .section_list li:hover{
 
     transform: scale(1.3,1.3);
-    color:#8C2020
+    color:#F23838;
 }
 
 
@@ -198,8 +202,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
-    height: 20px;
+    height: 40px;
 
 }
 
@@ -221,7 +224,7 @@ svg{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 20px;
+    height: 40px;
     padding-top: 1rem;
 }
 
@@ -248,7 +251,7 @@ svg{
     height: 20px;
     justify-content: start;
     margin-left: 1rem;
-    margin-top: 1rem;
+    font-size: 1rem;
 }
 
 
@@ -373,9 +376,10 @@ footer{
 #titulo_prod h1{
 
     color: #F23838;
-    text-align: left;
+    text-align: center;
     font-size: 3rem;
     margin: 1rem;
+    padding-top: 4rem;
 
 }
 
@@ -383,15 +387,17 @@ footer{
 
     color:  #0D0D0D;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 
 }
 
 .aside h4{
 
-    font-size: 1.2rem;  
+    font-size: 2rem;  
     padding-top: 1rem; 
     padding-bottom: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .cat_list{
@@ -403,7 +409,17 @@ footer{
 .cat_list li{
 
     padding: 0rem 0.5rem 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0s;
+
 }
+
+.cat_list li:hover{
+
+    color: #F23838;
+
+}
+
 
 .card_prod{
 
@@ -416,7 +432,7 @@ footer{
 
     
     width: 15rem;
-    margin: 1rem;
+    margin: 2rem;
     padding: 2rem;
     display: inline-block;
     border: solid;
@@ -519,8 +535,9 @@ footer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    height: 200px;
+    align-items: flex-start;
+    height: 771.19px;
+    border-right: #0D0D0D;
 
 }
 
@@ -538,7 +555,7 @@ footer{
 #titulo_nos h1{
     
     color: #F23838;
-    text-align: left;
+    text-align: center;
     font-size: 3rem;
     margin: 1rem;
 }
@@ -564,12 +581,19 @@ footer{
 #showroom_titulo{
 
     text-align: center;
+    padding: 2rem;
 }
 
-#showroom_fotos img{
-    height: 300px;
-    width: 300px;
+.slider_n{
+
+    display: flex;
+    justify-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
 }
+
+
 
 /* .grid_nos{
 
@@ -590,12 +614,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4rem;
 }
 
 .quienes{
     grid-area: quienes;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
@@ -630,18 +655,14 @@ footer{
 }
 /*testimonios*/
 
-.form_test{
-
-    background-color: #8C8C8C;
-    text-align: center;
-    
-}
 
 .titulo_test{
 
     color: #F23838;
     font-size: 3rem;
     margin: 1rem;
+    text-align: center;
+    padding-top: 4rem;
 }
 
 .form_titulo{
@@ -663,6 +684,32 @@ footer{
     text-align: center;
 }
 
+.formulario_t{
+
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+}
+
+#puntaje{
+
+    width: 443px;
+    margin-left: 12px;
+    margin-bottom: 13px;
+
+}
+
+.boton{
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.boton button{
+
+    margin-right: 1rem;
+}
 /*contacto*/
 
 #titulo_cont h1{
@@ -670,6 +717,8 @@ footer{
     color: #F23838;
     font-size: 3rem;
     margin: 1rem;   
+    text-align: center;
+    padding-top: 4rem;
 }
 
 

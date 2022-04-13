@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body class="grid_cont">
+<body class="container-fluid grid_cont">
 
-    <header>
+    <header class="row">
 
     <!--menu navegador-->
-    <nav class="navbar">
+    <nav class="navbar col-lg-12">
         <h3 class="navbar_titulo">Stock Ya!</h3>
             <ul class="navbar_items">
                 <li><a href="../index.html">Inicio</a></li>
@@ -39,12 +39,13 @@
 
     </header>
 
-    <div id="titulo_cont">
-        <h1>Contacto</h1>
+    <div id="titulo_cont" class="row">
+        <h1 class="col-lg-12">Contacto</h1>
     </div>
 
-    <div id="formulario">
-        <form action="" method="" enctype="">
+
+<!--     <div id="formulario" class="row">
+        <form action="" method="" enctype="" class="col-lg-12">
             <label for="nombre">Nombre:</label>
             <input type="text" placeholder="Ingrese su nombre" name="nombre">
 
@@ -63,15 +64,42 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
         </form>
+    </div> -->
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+        <input type="telefono" class="form-control" id="exampleFormControlInput1" placeholder="Número de teléfono">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Consultanos!</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="boton col-lg-12">
+        <button type="button" class="btn btn-dark">Enviar</button>
+        <button type="reset" class="btn btn-dark">Borrar</button>
     </div>
 
-    <div class="ubicacion">
-        <h3 class="ubicacion_titulo">Ubicación</h3>
+    <div class="row ubicacion">
+        <h3 class="ubicacion_titulo col-lg-12">Ubicación</h3>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3293545.8354850435!2d-60.41665907891789!3d-36.27947523185309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95bccb460850c857%3A0xf029678c73456386!2sstock%20ya!3m2!1d-34.6417132!2d-58.3967519!5e0!3m2!1ses!2sar!4v1647055891179!5m2!1ses!2sar"
-            style="border:0;" allowfullscreen="" loading="lazy">
+            style="border:0;" allowfullscreen="" loading="lazy" class="col-lg-12">
         </iframe>   
     </div>
+
+
 
 <footer>
 
