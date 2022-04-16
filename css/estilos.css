@@ -92,22 +92,6 @@ nav{
 
 }
 
-#card_index{
-
-    background-color: #8C8C8C;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap;
-}
-
-#card_index img{
-
-    display: inline-block;
-   /*  padding: 1rem; */
-    width: 20%;
-
-}
 
 .slider_c{
 
@@ -121,8 +105,6 @@ nav{
     height: 550px;
 }
 
-
-
 #servicios{
 
     height: 25rem;
@@ -134,14 +116,6 @@ nav{
 
 }
 
-#titulo_servicios{
-
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    text-align: center;
-    
-}
 
  .section_titulo{ 
 
@@ -243,7 +217,6 @@ svg{
 
 }
 
-
 .rights_footer{
 
     color: #D9D9D9;
@@ -255,20 +228,6 @@ svg{
 }
 
 
-/* .grid{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 300px 1400px 400px 110px;
-    grid-template-areas: 
-    "header header"
-    "titulo titulo"
-    "imagenes imagenes"
-    "titulo_serv servicios"
-    "footer footer"
-
-}
- */
 @media screen and (max-width:480px){
 
     .grid{
