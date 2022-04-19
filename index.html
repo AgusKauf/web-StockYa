@@ -29,29 +29,50 @@
 <body class="container-fluid">
 
     <header class="row navbar">
-    <!--menu navegador-->
-        <nav class="col-lg-12">
-            <h3 class="navbar_titulo">Stock Ya!</h3>
-                <ul class="navbar_items">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/productos.html">Productos</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/testimonios.html">Testimonios</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
+
+        <nav class="barra col-sm-12 col-md-12 col-lg-12 navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navegador container-fluid">
+              <a class="navbar-brand" href="#">StockYa!</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar_items navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/testimonios.html">Testimonios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
                 </ul>
-        </nav>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success btn2" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
 <!--titulo centrado en la pagina-->
     
     <section id="row titulo">
-            <h1 class="titulo_index col-lg-12">Stock Ya!</h1>
-            <h3 class="subtitulo_index col-lg-12">Tienda de materiales para la construcción</h3>
-            <h3 class="subtitulo_index2 col-lg-12">¡Te esperamos en nuestro showroom!</h3>
+            <h1 class="titulo_index col-sm-12 col-md-12 col-lg-12">Stock Ya!</h1>
+            <h3 class="subtitulo_index col-sm-12 col-md-12 col-lg-12">Tienda de materiales para la construcción</h3>
+            <h3 class="subtitulo_index2 col-sm-12 col-md-12 ol-lg-12">¡Te esperamos en nuestro showroom!</h3>
     </section>
 
     <div id="carouselExampleControls" class="row carousel slide slider_c" data-bs-ride="carousel">
-        <div class="slider carousel-inner col-lg-6">
+        <div class="slider carousel-inner col-sm-12 col-md-12 col-lg-6">
           <div class="carousel-item active">
             <img src="images/Deco_1.jpeg" class="d-block w-100" alt="Deco_1">
           </div>
@@ -72,11 +93,11 @@
         </button>
       </div>
 
-    <main class="row">
+    <main class="row content-box-gray">
 
-            <h3 class="titulo_servicios section_titulo col-lg-6">Nuestros servicios</h3>
+            <h3 class="titulo_servicios section_titulo col-sm-12 col-md-12 col-lg-6">Nuestros servicios</h3>
 
-            <ul class="servicios section_list col-lg-6">
+            <ul class="servicios section_list col-sm-12 col-md-12 col-lg-6">
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="icon_check" viewBox="0 0 16 16">
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
@@ -107,7 +128,7 @@
 
     <footer class="row">
 
-        <div class="redes_footer col-lg-12">
+        <div class="redes_footer col-sm-12 col-md-12 col-lg-12">
             <a href="https://www.facebook.com/stockya.ok/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -126,7 +147,7 @@
         </div>
 
 
-        <nav class="navbar_footer col-lg-12">
+        <nav class="navbar_footer col-sm-12 col-md-12 col-lg-12">
             <ul>
                 <li><a href="pages/productos.html">Productos</a></li>
                 <li><a href="pages/nosotros.html">Nosotros</a></li>
@@ -135,7 +156,7 @@
             </ul>
         </nav>
 
-        <h5 class="rights_footer col-lg-4">Sitio creado por Agustín Kaufman</h5>
+        <h5 class="rights_footer col-sm-4 col-md-4 col-lg-4">Sitio creado por Agustín Kaufman</h5>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
