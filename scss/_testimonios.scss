@@ -1,0 +1,44 @@
+.titulo_test{
+    color: #F23838;
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.form_titulo{
+    padding: 1rem;
+    text-align: left;
+}
+
+.input{
+    display: block;
+    padding: 0.5rem;
+}
+
+.input_block{
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.formulario_t{
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+#puntaje{
+    width: 443px;
+    margin-left: 12px;
+    margin-bottom: 13px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+        button{
+            margin-right: 1rem;
+        }
+}

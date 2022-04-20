@@ -1,0 +1,75 @@
+#titulo_nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+        h1{
+            color: #F23838;
+            text-align: center;
+            font-size: 3rem;
+            margin: 1rem;
+        }
+}
+
+.quienes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.quienes_titulo{
+    text-align: center;
+    padding: 1rem;
+}
+
+.quienes_parra{
+    text-align: center;
+}
+
+.imagen_nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        img{
+            height: 250px;
+            width: 250px;
+        }
+}
+
+.circular-square {
+    border-radius: 50%;
+}
+
+#showroom{
+    margin-top: 2rem;
+}
+
+#showroom_titulo{
+    text-align: center;
+    padding: 2rem;
+}
+
+#showroom_fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+        img{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+}
+
+.slider_n{
+    display: flex;
+    justify-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}

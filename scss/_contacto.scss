@@ -1,0 +1,32 @@
+#titulo_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        h1{
+            color: #F23838;
+            font-size: 3rem;
+            margin: 1rem;   
+            text-align: center;
+            padding-top: 4rem;
+        }
+}
+
+.ubicacion{
+    text-align: center;
+
+        iframe{
+            height: 20rem;
+            width: 40%
+        }
+}
+
+#formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}

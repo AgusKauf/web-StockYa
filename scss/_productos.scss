@@ -1,0 +1,160 @@
+#titulo_prod{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+        h1{
+            color: #F23838;
+            text-align: center;
+            font-size: 3rem;
+            margin: 1rem;
+            padding-top: 4rem;
+        }
+
+        h3{
+            color:  #0D0D0D;
+            text-align: center;
+            font-size: 2rem;
+        }
+}
+
+.aside{
+    grid-area: aside;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 771.19px;
+
+        h4{
+            font-size: 2rem;  
+            padding-top: 1rem; 
+            padding-bottom: 2rem;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+}
+
+.cat_list{
+    display: inline-block;
+    list-style-type: none;
+
+        li{
+            padding: 0rem 0.5rem 0.5rem 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0s;
+
+                &:hover{
+                    color: #F23838;
+                }
+        }
+}
+
+.card_prod{
+    text-align: center;
+    margin: 1rem 1.5rem 0rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    width: 15rem;
+    margin: 2rem;
+    padding: 2rem;
+    display: inline-block;
+    border: solid;
+    transition: all 1s;
+
+        &:hover{
+            transform: scale(1.2,1.2);
+        }
+
+    img{
+        width: 100%;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    h5{
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    aside{
+        height: 150px !important;
+        justify-content: center;
+        background-color: #F23838;
+        margin: 0rem;
+    }
+
+    .aside h4{
+        font-weight: bold;
+    }
+
+    .aside li{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .card_prod{
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .cat_list li{
+
+        transition: color 0s;
+    }
+
+    .cat_list li:hover{
+
+        color: white;
+    
+    }
+
+}
+    
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    aside{
+        height: 150px !important;
+        justify-content: center;
+        background-color: #F23838;
+        margin: 0rem;
+    }
+
+    .aside h4{
+        font-weight: bold;
+    }
+
+    .aside li{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .card_prod{
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .cat_list li{
+
+        transition: color 0s;
+    }
+
+    .cat_list li:hover{
+
+        color: white;
+    
+    }
+
+}
+
