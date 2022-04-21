@@ -8,7 +8,7 @@ nav{
 
 .navbar{
 
-    background-color: #D9D9D9;
+    background-color: $color_2;
     text-align: center;
     height: 60px;
     width: 100%;
@@ -19,7 +19,7 @@ nav{
 
         a{
             text-decoration: none;
-            color: #202124 ;
+            color: $color_3 ;
             padding: 2rem;
             font-size: 1.2rem;
         }
@@ -27,14 +27,14 @@ nav{
 
 .barra{
 
-    background-color: #D9D9D9 !important;
+    background-color: $color_3 !important;
 
 } 
 
 .navbar_titulo{
 
     text-decoration: none;
-    color: #202124;
+    color: $color_3;
     display: inline-block;
     position: absolute;
     right: 93%;
@@ -55,15 +55,15 @@ nav{
 
 .btn2{
 
-    color: #F23838;
-    border-color: #F23838;
+    color: $color_1;
+    border-color: $color_1;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
         &:hover{
-            color: #0D0D0D;
-            background-color: #F23838;
-            border-color: #F23838;
-            box-shadow: #F23838;
+            color: $color_3;
+            background-color: $color_1;
+            border-color: $color_1;
+            box-shadow: $color_1;
         }
 } 
 
@@ -78,14 +78,14 @@ nav{
 
 .titulo_index{
 
-    color: #F23838;
+    $color_1;
     text-align: center;
     font-size: 4rem;
     padding: 4rem 1.5rem 1.5rem 1.5rem;
 } 
 
 .subtitulo_index{
-    color: #0D0D0D;
+    color: $color_3;
     text-align: center;
     font-size: 2rem;
     padding-bottom: 0.5rem;
@@ -94,7 +94,7 @@ nav{
 
 .subtitulo_index2{
 
-    color: #0D0D0D;
+    color: $color_3;
     text-align: center;
     font-size: 1.5rem;
     padding-bottom: 2rem;
@@ -117,17 +117,17 @@ nav{
 .separador{
     height: 15px !important;
     width: 60%;
-    background-color: black !important;
+    background-color: $color_3 !important;
     margin-left: 25rem;
     margin-right: 25rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: #0D0D0D;
+    color: $color_3;
 } 
 
 .content-box-gray {
-    background-color: #8C8C8C;
-    border: 1px solid black;
+    background-color: $color_4;
+    border: 1px solid $color_3;
 } 
 
 .servicios{
@@ -150,7 +150,7 @@ nav{
 } 
 
 .section_list {
-    color: #0D0D0D;
+    color: $color_3;
     font-size: 2rem;
     display: inline-block;
 
@@ -169,13 +169,13 @@ nav{
 }
 
 .icon_check{
-    color: #0D0D0D;
+    color: $color_3;
     margin-right: 4rem;
 } 
 
 footer{
 
-    background-color: #0D0D0D;
+    background-color: $color_3;
 }
 
 .redes_footer {
@@ -188,7 +188,7 @@ footer{
 
         a{
             text-decoration: none;
-            color: #D9D9D9;
+            color: $color_2;
             font-size: 1rem;
             padding: 2rem;
         }
@@ -196,7 +196,7 @@ footer{
 }
 
 svg{
-    color: #D9D9D9;
+    color: $color_2;
 } 
 
 .navbar_footer{
@@ -212,7 +212,7 @@ svg{
 
                 a{
                     text-decoration: none;
-                    color: #D9D9D9;
+                    color: $color_2;
                     font-size: 1rem;
                 }
         }
@@ -220,7 +220,7 @@ svg{
 
 .rights_footer{
 
-    color: #D9D9D9;
+    color: $color_2;
     display: flex;
     height: 20px;
     justify-content: start;
