@@ -22,16 +22,8 @@
     
     <header class="row navbar">
     <!--menu navegador-->
-<!--     <h3 class="navbar_titulo">Stock Ya!</h3> -->
-<!--         <ul class="navbar_items">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/productos.html">Productos</a></li>
-            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a href="testimonios.html">Testimonios</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul> -->
 
-        <nav class="barra col-sm-12 col-md-12 col-lg-12 navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="col-sm-12 col-md-12 col-lg-12 navbar navbar-expand-lg navbar-light bg-light">
             <div class="navegador container-fluid">
               <a class="navbar-brand" href="#">StockYa!</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +48,7 @@
                   </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <input class="btn1 form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                   <button class="btn btn-outline-success btn2" type="submit">Buscar</button>
                 </form>
               </div>
@@ -65,36 +57,87 @@
 
     </header>
 
-    <div class="row">
+    <div class="container">
         <h1 class="titulo_test">Testimonios</h1>
-
         <h3 class="quienes_titulo">¿Qué dicen nuestros clientes?</h3>
-        <p class="quienes_parra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus suscipit exercitationem at nihil, natus quo ea rem doloremque eaque harum qui quis expedita voluptate repellat ullam, eius totam hic veritatis.</p>
+        <p class="row testi_parra">Gracias a la continua valoración de nuestra comunidad, trabajamos para asegurarnos que comprar en StockYa! sea una experiencia increíble. Su continuo apoyo y soporte nos dan muchísimas energías para seguir en nuestra misión por ofrecer un servicio integral de calidad desde la compra del producto hasta su instalación.</p>
+    </div>
+
+    <div class="row testimonios">
+      <article class="col-lg-3">
+        <h5 class="nombre_t">Agustin K</h5>
+        <ul class="puntuacion">
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+        </ul>
+        <p>"Muy buena atención, excelente personal. 100% recomendables."</p>
+      </article>
+
+      <article class="col-lg-3">
+        <h5 class="nombre_t">Bianca D</h5>
+        <ul class="puntuacion">
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+        </ul>
+        <p>"Muy buena atencion y mejor precio. Los vuelvo a elegir"</p>
+      </article>
+
+      <article class="col-lg-3">
+        <h5 class="nombre_t">Tomas G</h5>
+        <ul class="puntuacion">
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+          <li>★</li>
+        </ul>
+        <p>"Excelente calidad de productos y muy buena atencion!"</p>
+      </article>
+
     </div>
 
 
     <hr class="separador"> 
 
+    <div class="titulo_form">
+      <h3>Ayudanos a mejorar nuestra experiencia</h3>
+      <p>Completá el formulario y danos tu opinión</p>
+    </div>
+
+
     <div class="row formulario_t">
 
     <div class="mb-3 col-lg-6">
-        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <label for="exampleFormControlInput1" class="form-label nombre">Nombre</label>
         <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
       </div>
 
       <div class="mb-3 col-lg-6">
-        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <label for="exampleFormControlInput1" class="form-label nombre">Apellido</label>
         <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
       </div>
 
-      <select id="puntaje" class="form-select col-lg-6" aria-label="Default select example">
-        <option selected>Puntua tu experiencia</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
+      <div>
+      <label for="estrellas">Puntuanos</label>
+      <p class="clasificacion">
+          <input id="radio1" type="radio" name="estrellas" value="5"><!--
+        --><label for="radio1">★</label><!--
+        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+        --><label for="radio2">★</label><!--
+        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+        --><label for="radio3">★</label><!--
+        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+        --><label for="radio4">★</label><!--
+        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+        --><label for="radio5">★</label>
+      </p>
+      </div>
 
       <div class="mb-3 col-lg-12">
         <label for="exampleFormControlTextarea1" class="form-label">Contanos tu experiencia!</label>

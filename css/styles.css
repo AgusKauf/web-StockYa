@@ -5,22 +5,23 @@ nav {
   align-items: center; }
 
 .navbar {
-  background-color: #D9D9D9;
+  background-color: #202124 !important;
   text-align: center;
   height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: fixed; }
+  position: fixed;
+  z-index: 1; }
   .navbar a {
     text-decoration: none;
-    color: #202124;
+    color: white !important;
     padding: 2rem;
     font-size: 1.2rem; }
 
 .barra {
-  background-color: #D9D9D9 !important; }
+  background-color: #202124 !important; }
 
 .navbar_titulo {
   text-decoration: none;
@@ -38,12 +39,18 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem; }
 
+.btn1 {
+  transition: all 0s; }
+
+.btn1:focus {
+  border-color: #F23838; }
+
 .btn2 {
   color: #F23838;
   border-color: #F23838;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
   .btn2:hover {
-    color: #0D0D0D;
+    color: #202124;
     background-color: #F23838;
     border-color: #F23838;
     box-shadow: #F23838; }
@@ -58,16 +65,16 @@ nav {
   color: #F23838;
   text-align: center;
   font-size: 4rem;
-  padding: 4rem 1.5rem 1.5rem 1.5rem; }
+  padding: 6rem 1.5rem 1.5rem 1.5rem; }
 
 .subtitulo_index {
-  color: #0D0D0D;
+  color: #202124;
   text-align: center;
   font-size: 2rem;
   padding-bottom: 0.5rem; }
 
 .subtitulo_index2 {
-  color: #0D0D0D;
+  color: #202124;
   text-align: center;
   font-size: 1.5rem;
   padding-bottom: 2rem; }
@@ -84,16 +91,16 @@ nav {
 .separador {
   height: 15px !important;
   width: 60%;
-  background-color: black !important;
+  background-color: #202124 !important;
   margin-left: 25rem;
   margin-right: 25rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  color: #0D0D0D; }
+  color: #202124; }
 
 .content-box-gray {
   background-color: #8C8C8C;
-  border: 1px solid black; }
+  border: 1px solid #202124; }
 
 .servicios {
   display: flex;
@@ -111,7 +118,7 @@ nav {
   margin-bottom: 0rem; }
 
 .section_list {
-  color: #0D0D0D;
+  color: #202124;
   font-size: 2rem;
   display: inline-block; }
   .section_list li {
@@ -125,11 +132,11 @@ nav {
       color: white; }
 
 .icon_check {
-  color: #0D0D0D;
+  color: #202124;
   margin-right: 4rem; }
 
 footer {
-  background-color: #0D0D0D; }
+  background-color: #202124; }
 
 .redes_footer {
   text-align: center;
@@ -222,7 +229,7 @@ svg {
     text-align: center;
     font-size: 3rem;
     margin: 1rem;
-    padding-top: 4rem; }
+    padding: 6rem 0rem 2rem 0rem; }
   #titulo_prod h3 {
     color: #0D0D0D;
     text-align: center;
@@ -233,8 +240,12 @@ svg {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-start;
-  height: 771.19px; }
+  align-items: center;
+  height: 300px;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  border: solid;
+  margin-top: 1.85rem; }
   .aside h4 {
     font-size: 2rem;
     padding-top: 1rem;
@@ -244,7 +255,8 @@ svg {
 
 .cat_list {
   display: inline-block;
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0rem; }
   .cat_list li {
     padding: 0rem 0.5rem 0.5rem 0.5rem;
     font-size: 1.5rem;
@@ -254,10 +266,10 @@ svg {
 
 .card_prod {
   text-align: center;
-  margin: 1rem 1.5rem 0rem 1.5rem;
+  margin: 1rem 0rem 0rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around; }
 
 .card {
@@ -317,7 +329,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem; }
+  padding: 6rem 0rem 2rem 0rem; }
   #titulo_nos h1 {
     color: #F23838;
     text-align: center;
@@ -336,7 +348,7 @@ svg {
   padding: 1rem; }
 
 .quienes_parra {
-  text-align: center; }
+  text-align: left; }
 
 .imagen_nos {
   display: flex;
@@ -353,6 +365,8 @@ svg {
   margin-top: 2rem; }
 
 #showroom_titulo {
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding: 2rem; }
 
@@ -376,9 +390,36 @@ svg {
 .titulo_test {
   color: #F23838;
   font-size: 3rem;
-  margin: 1rem;
   text-align: center;
-  padding-top: 4rem; }
+  padding: 6rem 0rem 1rem 0rem; }
+
+.testi_parra {
+  margin-right: 8rem;
+  margin-left: 8rem; }
+
+.testimonios {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
+
+.puntuacion {
+  display: flex;
+  justify-content: left;
+  padding-left: 0rem; }
+  .puntuacion li {
+    display: inline-block;
+    color: orange; }
+
+.nombre_t {
+  color: #F23838; }
+
+.titulo_form h3 {
+  text-align: center; }
+
+.titulo_form p {
+  font-size: 1.2rem; }
 
 .form_titulo {
   padding: 1rem;
@@ -395,17 +436,40 @@ svg {
 
 .formulario_t {
   margin-left: 15rem;
-  margin-right: 15rem; }
+  margin-right: 15rem;
+  margin-bottom: 2rem;
+  background-color: gainsboro;
+  border-radius: 5px; }
+  .formulario_t div .nombre {
+    padding-top: 1rem; }
 
-#puntaje {
-  width: 443px;
-  margin-left: 12px;
-  margin-bottom: 13px; }
+.clasificacion {
+  direction: rtl;
+  /* right to left */
+  unicode-bidi: bidi-override;
+  /* bidi de bidireccional */
+  display: flex;
+  justify-content: left; }
+
+.clasificacion label {
+  color: grey; }
+
+.clasificacion label:hover {
+  color: orange; }
+
+.clasificacion label:hover ~ label {
+  color: orange; }
+
+.clasificacion input[type="radio"]:checked ~ label {
+  color: orange; }
+
+.clasificacion input[type="radio"] {
+  display: none; }
 
 .boton {
   display: flex;
   justify-content: center;
-  padding-bottom: 2rem; }
+  padding-bottom: 1rem; }
   .boton button {
     margin-right: 1rem; }
 
@@ -418,7 +482,7 @@ svg {
     font-size: 3rem;
     margin: 1rem;
     text-align: center;
-    padding-top: 4rem; }
+    padding: 6rem 0rem 2rem 0rem; }
 
 .ubicacion {
   text-align: center; }
@@ -434,6 +498,10 @@ svg {
   align-items: center;
   margin-right: 2rem;
   margin-left: 2rem; }
+
+.icon_ubi {
+  height: 100px;
+  width: 100px; }
 
 a:active {
   position: relative;

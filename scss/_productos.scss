@@ -10,7 +10,7 @@
             text-align: center;
             font-size: 3rem;
             margin: 1rem;
-            padding-top: 4rem;
+            padding: 6rem 0rem 2rem 0rem;
         }
 
         h3{
@@ -25,8 +25,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
-    height: 771.19px;
+    align-items: center;
+    height: /* 771.19px */ 300px;
+    background-color: $color_2;
+    border-radius: 5px;
+    border: solid;
+    margin-top: 1.85rem;
 
         h4{
             font-size: 2rem;  
@@ -40,6 +44,7 @@
 .cat_list{
     display: inline-block;
     list-style-type: none;
+    padding-left: 0rem;
 
         li{
             padding: 0rem 0.5rem 0.5rem 0.5rem;
@@ -54,10 +59,10 @@
 
 .card_prod{
     text-align: center;
-    margin: 1rem 1.5rem 0rem 1.5rem;
+    margin: 1rem 0rem 0rem 1.5rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 }
 

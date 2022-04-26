@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 6rem 0rem 2rem 0rem;
 
         h1{
             color: #F23838;
@@ -26,7 +26,7 @@
 }
 
 .quienes_parra{
-    text-align: center;
+    text-align: left;
 }
 
 .imagen_nos{
@@ -49,6 +49,8 @@
 }
 
 #showroom_titulo{
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 2rem;
 }
