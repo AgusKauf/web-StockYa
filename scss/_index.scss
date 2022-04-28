@@ -1,9 +1,7 @@
 nav{
 
     height: 3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flexbox
 }
 
 .navbar{
@@ -12,9 +10,7 @@ nav{
     text-align: center;
     height: 60px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include flexbox;
     position: fixed;
     z-index: 1;
 
@@ -79,10 +75,9 @@ nav{
 
 #titulo{
 
-    display: flex;
+    @include flexbox;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
+
 
 } 
 
@@ -202,7 +197,6 @@ footer{
             font-size: 1rem;
             padding: 2rem;
         }
-
 }
 
 svg{

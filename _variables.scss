@@ -2,3 +2,22 @@ $color_1: #F23838;
 $color_2: #D9D9D9;
 $color_3: #202124;
 $color_4: #8C8C8C;
+
+
+$redes: (
+    whatsapp:#25D366,
+    facebook:#4267b2,
+    instagram:#833AB4
+);
+
+@each $red, $color in $redes{
+    .btn-#{$red}{
+        background-color: $color;
+    }
+}
+
+@mixin flexbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
