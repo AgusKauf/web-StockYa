@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0rem 2rem 0rem;
+    padding: 5rem 0rem 2rem 0rem;
 
         h1{
             color: #F23838;
             text-align: center;
-            font-size: 3rem;
+            font-size: 4rem;
             margin: 1rem;
         }
 }
@@ -17,16 +17,23 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
+    background-color: $color_2;
+    width: 100%;
 }
 
 .quienes_titulo{
     text-align: center;
     padding: 1rem;
+    font-size: 2.5rem;
 }
 
 .quienes_parra{
     text-align: left;
+    font-size: 1.2rem;
+        li{
+            font-size: 1.2rem;
+        }
 }
 
 .imagen_nos{
@@ -44,6 +51,12 @@
     border-radius: 50%;
 }
 
+.separador_nos{
+    height: 50px;
+    background-color: $color_3;
+    margin-top: 3rem;
+}
+
 #showroom{
     margin-top: 2rem;
 }
@@ -52,7 +65,16 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+.nosotros_s{
+    text-align: center;
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
 }
 
 #showroom_fotos{

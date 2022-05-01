@@ -1,14 +1,26 @@
 .titulo_test{
     color: #F23838;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding: 6rem 0rem 1rem 0rem;
 }
 
-.testi_parra{
-    margin-right: 8rem;
-    margin-left: 8rem;
+.quienes_titulo{
+    font-size: 3rem;
+}
 
+.testi_subtitulo{
+    display: flex;
+    align-items: center;
+}
+
+.testi_parra{
+    font-size: 1.2rem;
+    margin-right: 0rem;
+}
+
+.img_cliente{
+    height: 200px;
 }
 
 .testimonios{
@@ -17,6 +29,8 @@
     justify-content: space-around;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    border: solid;
+    padding: 1rem;
 }
 
 .puntuacion{
@@ -67,6 +81,14 @@
     margin-bottom: 2rem;
     background-color: gainsboro;
     border-radius: 5px;
+        h3{
+            font-size: 2rem;
+            text-align: center;
+        }
+        p{
+            font-size: 1.2rem;
+            text-align: center;
+        }
 
         div .nombre{
             padding-top: 1rem;

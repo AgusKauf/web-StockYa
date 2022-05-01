@@ -5,20 +5,54 @@
 
         h1{
             color: #F23838;
-            font-size: 3rem;
+            font-size: 4rem;
             margin: 1rem;   
             text-align: center;
-            padding: 6rem 0rem 2rem 0rem;
+            padding: 5rem 0rem 1rem 0rem;
+        }
+}
+
+.consulta{
+    height: 80px;
+    background-color: $color_4;
+    color: white;
+    @include flexbox;
+    margin-bottom: 3rem;
+        h3{
+            text-align: center;
+            font-size: 2.5rem;
         }
 }
 
 .ubicacion{
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    h3{
+        font-size: 2.5rem;
+    }
+}
 
-        iframe{
-            height: 20rem;
-            width: 40%
-        }
+.mapa{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    iframe{
+        height: 400px;
+        width: 700px
+    }
+}
+
+.texto_ubicacion{
+    svg{
+        margin-left: 15rem;
+    }
+    p{
+        text-align: center;
+        font-size: 2rem;
+        color: $color_1;
+    }
 }
 
 #formulario{
