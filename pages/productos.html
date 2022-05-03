@@ -24,9 +24,8 @@
 
 <body class="container-fluid grid_prod">
 
+<!--   Barra de navegación -->
     <header class="row navbar">
- <!--menu navegador-->
-
         <nav class="col-sm-12 col-md-12 col-lg-12 navbar navbar-expand-lg navbar-light bg-light">
             <div class="navegador container-fluid">
               <a class="navbar-brand" href="#">StockYa!</a>
@@ -57,9 +56,10 @@
                 </form>
               </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
+<!-- titulo del sitio -->
     <div id="titulo_prod" class="row">
         <h1 class="col-sm-12 col-md-12 col-lg-12">Productos</h1>
     </div>
@@ -68,14 +68,19 @@
         <h3 class="col-sm-12 col-md-12 col-lg-12">¡Los mejores porcelanatos y cerámicos del mercado!</h3>
     </div>
 
-
+<!-- ecommerce de productos -->
     <main class="row card_prod">
                 
-                <aside class="aside col-sm-12 col-md-12 col-lg-2">
+                <aside class="aside row<!-- col-sm-12 col-md-12 col-lg-2 -->">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
                     <h4>Categorias</h4>
-                    <input type="submit" value="Porcelanatos" class="botoncat">
-                    <input type="submit" value="Cerámicos" class="botoncat">
-                    <input type="submit" value="Accesorios" class="botoncat">
+                    </div>
+
+                    <div>
+                    <input type="submit" value="Porcelanatos" class="botoncat col-lg-12 col-md-12 col-sm-3">
+                    <input type="submit" value="Cerámicos" class="botoncat col-lg-12 col-md-12 col-sm-3">
+                    <input type="submit" value="Accesorios" class="botoncat col-lg-12 col-md-12 col-sm-3">
+                    </div>
                 </aside>
 
             <div class="prod col-sm-12 col-md-12 col-lg-10">
@@ -115,10 +120,10 @@
                     <h5>$500</h5>
                 </div>
             </div>
-     </main>
+    </main>
 
 <footer class="row">
-
+<!-- redes sociales -->
     <div class="redes_footer col-sm-12 col-md-12 col-lg-12">
         <a href="https://www.facebook.com/stockya.ok/">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook btn-facebook" viewBox="0 0 16 16">
@@ -137,6 +142,7 @@
         </a>
     </div>
 
+<!-- conexion con otros html -->
     <nav class="navbar_footer col-sm-12 col-md-12 col-lg-12">
         <ul>
             <li><a href="../index.html">Inicio</a></li>

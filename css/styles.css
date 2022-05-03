@@ -108,8 +108,7 @@ nav {
   color: #202124; }
 
 .content-box-gray {
-  background-color: #8C8C8C;
-  border: 1px solid #202124; }
+  background-color: #8C8C8C; }
 
 .servicios {
   display: flex;
@@ -201,7 +200,8 @@ svg {
     text-align: center;
     width: 100%; }
   .navbar {
-    text-align: center; }
+    text-align: center;
+    height: 90px; }
   .navbar h3 {
     display: none; }
   .navbar a {
@@ -221,7 +221,7 @@ svg {
   .redes_footer {
     margin: 0rem; }
   .navbar_footer {
-    padding: 0rem; } }
+    display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .slider_c img {
@@ -319,16 +319,19 @@ svg {
     display: none; }
   .btn2 {
     display: none; }
+  .subtitulo_prod {
+    height: 100px; }
+    .subtitulo_prod h3 {
+      font-size: 2rem; }
   aside {
     height: 150px !important;
-    justify-content: center;
+    flex-direction: row;
     background-color: #F23838;
     margin: 0rem; }
   .aside h4 {
     font-weight: bold; }
-  .aside li {
-    display: inline-block;
-    text-align: center; }
+  .aside input {
+    flex-direction: row; }
   .card_prod {
     margin: 0rem 0rem 0rem 0rem; }
   .cat_list li {
@@ -434,6 +437,10 @@ svg {
   margin-left: 5rem;
   margin-right: 5rem; }
 
+@media screen and (max-width: 768px) {
+  .quienes_parra {
+    text-align: center; } }
+
 .titulo_test {
   color: #F23838;
   font-size: 4rem;
@@ -460,8 +467,15 @@ svg {
   justify-content: space-around;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  border: solid;
+  background-color: #D9D9D9;
   padding: 1rem; }
+
+#puntuacion {
+  display: flex;
+  flex-direction: row; }
+
+.titulo_punt {
+  margin-top: 0.1rem; }
 
 .puntuacion {
   display: flex;
@@ -501,7 +515,8 @@ svg {
   border-radius: 5px; }
   .formulario_t h3 {
     font-size: 2rem;
-    text-align: center; }
+    text-align: center;
+    margin-top: 1rem; }
   .formulario_t p {
     font-size: 1.2rem;
     text-align: center; }
@@ -514,7 +529,8 @@ svg {
   unicode-bidi: bidi-override;
   /* bidi de bidireccional */
   display: flex;
-  justify-content: left; }
+  justify-content: left;
+  margin-left: 1rem; }
 
 .clasificacion label {
   color: grey; }
@@ -538,6 +554,11 @@ svg {
   .boton button {
     margin-right: 1rem; }
 
+@media screen and (max-width: 768px) {
+  .formulario_t {
+    margin-right: 1rem;
+    margin-left: 0rem; } }
+
 #titulo_cont {
   display: flex;
   justify-content: center;
@@ -548,6 +569,31 @@ svg {
     margin: 1rem;
     text-align: center;
     padding: 5rem 0rem 1rem 0rem; }
+
+.imagen_contacto img {
+  height: 480px;
+  width: 450px; }
+
+.formulario_con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .formulario_con .formulario_contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    width: 500px; }
+    .formulario_con .formulario_contacto input {
+      width: 300px; }
+    .formulario_con .formulario_contacto textarea {
+      width: 300px; }
+
+.titulo_form {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .consulta {
   height: 80px;
@@ -597,6 +643,24 @@ svg {
 .icon_ubi {
   height: 100px;
   width: 100px; }
+
+@media screen and (max-width: 768px) {
+  .consulta {
+    height: 100px;
+    margin-bottom: 0.5rem; }
+    .consulta h3 {
+      font-size: 1.5rem; }
+  .imagen_contacto {
+    text-align: center;
+    margin-bottom: 1rem;
+    height: 300px; }
+    .imagen_contacto img {
+      height: 250px;
+      width: 200px; }
+  .texto_ubicacion {
+    margin-top: 1rem; }
+    .texto_ubicacion svg {
+      margin-left: 12rem; } }
 
 a:active {
   position: relative;
