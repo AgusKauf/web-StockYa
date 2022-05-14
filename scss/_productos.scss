@@ -121,9 +121,16 @@
         display: none;
     }
 
+    .subtitulo_prod{
+        height: 100px;
+        h3{
+            font-size: 2rem;
+        }
+    }
+
     aside{
         height: 150px !important;
-        justify-content: center;
+        flex-direction: row;
         background-color: #F23838;
         margin: 0rem;
     }
@@ -132,9 +139,8 @@
         font-weight: bold;
     }
 
-    .aside li{
-        display: inline-block;
-        text-align: center;
+    .aside input{
+        flex-direction: row;
     }
 
     .card_prod{
