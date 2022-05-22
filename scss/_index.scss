@@ -28,6 +28,12 @@ nav{
 
 } 
 
+.logo{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
 .navbar_titulo{
 
     text-decoration: none;
@@ -271,7 +277,7 @@ svg{
 
     .navbar{
         text-align: center;
-        height: 80px;
+        height: 90px;
     }
 
     .navbar h3{

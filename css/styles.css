@@ -32,6 +32,11 @@ nav {
 .barra {
   background-color: #202124 !important; }
 
+.logo {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px; }
+
 .navbar_titulo {
   text-decoration: none;
   color: #202124;
@@ -211,7 +216,7 @@ svg {
     width: 100%; }
   .navbar {
     text-align: center;
-    height: 80px; }
+    height: 90px; }
   .navbar h3 {
     display: none; }
   .navbar a {
