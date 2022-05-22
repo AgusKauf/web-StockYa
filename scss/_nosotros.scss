@@ -94,14 +94,32 @@
 .slider_n{
     display: flex;
     justify-items: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
 }
 
 @media screen and (max-width: 768px){
+
+    .navbar{
+        z-index: 1;
+    }
 
     .quienes_parra{
         text-align: center;
     }
 
+    .quienes{
+        flex-direction: column;
+    }
+
+    .carousel{
+        button{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    #titulo_nos h1{
+        padding-top: 3rem;
+    }
 }

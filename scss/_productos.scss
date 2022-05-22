@@ -71,6 +71,14 @@
     margin: 0.5rem;
 }
 
+.categorias{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 1.8rem;
+    margin-right: 1rem;
+}
+
 .card_prod{
     text-align: center;
     margin: 1rem 0rem 0rem 1.5rem;
@@ -86,6 +94,7 @@
     padding: 2rem;
     display: inline-block;
     border: solid;
+    box-shadow: 5px 5px 5px #999;
     transition: all 1s;
 
         &:hover{
@@ -98,17 +107,13 @@
 
     h3{
         text-align: center;
+        margin-top: 0.5rem;
     }
 
     h5{
         text-align: center;
         padding-top: 0.5rem;
     }
-}
-
-.card_oferta{
-    @extend .card;
-    border-color: orange;
 }
 
 @media screen and (max-width: 768px){
@@ -128,19 +133,8 @@
         }
     }
 
-    aside{
-        height: 150px !important;
-        flex-direction: row;
-        background-color: #F23838;
-        margin: 0rem;
-    }
-
-    .aside h4{
-        font-weight: bold;
-    }
-
-    .aside input{
-        flex-direction: row;
+    .aside{
+        display: none;
     }
 
     .card_prod{
@@ -162,6 +156,10 @@
     
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+
+    #titulo_prod h1{
+        padding-top: 7rem;
+    }
 
     aside{
         height: 150px !important;
@@ -194,5 +192,8 @@
     
     }
 
+    .subtitulo_prod{
+        height: 200px;
+    }
 }
 

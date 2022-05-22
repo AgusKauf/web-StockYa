@@ -183,6 +183,16 @@ svg {
   margin-left: 1rem;
   font-size: 1rem; }
 
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: white !important;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow .15s ease-in-out; }
+
 @media screen and (max-width: 768px) {
   header {
     height: 60px !important;
@@ -201,11 +211,13 @@ svg {
     width: 100%; }
   .navbar {
     text-align: center;
-    height: 90px; }
+    height: 80px; }
   .navbar h3 {
     display: none; }
   .navbar a {
-    font-size: 1rem; }
+    font-size: 1.5rem;
+    left: 40%;
+    padding: 1rem; }
   #servicios {
     text-align: center; }
   .section_list li {
@@ -221,11 +233,27 @@ svg {
   .redes_footer {
     margin: 0rem; }
   .navbar_footer {
-    display: none; } }
+    display: none; }
+  .nav-item a {
+    padding: 0.5rem; }
+  .navbar_items {
+    background-color: #202124;
+    margin-left: 0rem; } }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .titulo_index {
+    padding-top: 8rem; }
   .slider_c img {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  .navbar {
+    height: 102px; }
+  .nav-item a {
+    padding: 0.5rem; }
+  .navbar_items {
+    background-color: #202124;
+    margin-left: 0rem; }
+  .d-flex {
+    display: none !important; } }
 
 #titulo_prod {
   display: flex;
@@ -286,6 +314,13 @@ svg {
   padding: 0.5rem;
   margin: 0.5rem; }
 
+.categorias {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 1.8rem;
+  margin-right: 1rem; }
+
 .card_prod {
   text-align: center;
   margin: 1rem 0rem 0rem 1.5rem;
@@ -294,25 +329,24 @@ svg {
   align-items: flex-start;
   justify-content: space-around; }
 
-.card, .card_oferta {
+.card {
   width: 15rem;
   margin: 2rem;
   padding: 2rem;
   display: inline-block;
   border: solid;
+  box-shadow: 5px 5px 5px #999;
   transition: all 1s; }
-  .card:hover, .card_oferta:hover {
+  .card:hover {
     transform: scale(1.2, 1.2); }
-  .card img, .card_oferta img {
+  .card img {
     width: 100%; }
-  .card h3, .card_oferta h3 {
-    text-align: center; }
-  .card h5, .card_oferta h5 {
+  .card h3 {
+    text-align: center;
+    margin-top: 0.5rem; }
+  .card h5 {
     text-align: center;
     padding-top: 0.5rem; }
-
-.card_oferta {
-  border-color: orange; }
 
 @media screen and (max-width: 768px) {
   .btn1 {
@@ -323,15 +357,8 @@ svg {
     height: 100px; }
     .subtitulo_prod h3 {
       font-size: 2rem; }
-  aside {
-    height: 150px !important;
-    flex-direction: row;
-    background-color: #F23838;
-    margin: 0rem; }
-  .aside h4 {
-    font-weight: bold; }
-  .aside input {
-    flex-direction: row; }
+  .aside {
+    display: none; }
   .card_prod {
     margin: 0rem 0rem 0rem 0rem; }
   .cat_list li {
@@ -340,6 +367,8 @@ svg {
     color: white; } }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  #titulo_prod h1 {
+    padding-top: 7rem; }
   aside {
     height: 150px !important;
     justify-content: center;
@@ -355,7 +384,9 @@ svg {
   .cat_list li {
     transition: color 0s; }
   .cat_list li:hover {
-    color: white; } }
+    color: white; }
+  .subtitulo_prod {
+    height: 200px; } }
 
 #titulo_nos {
   display: flex;
@@ -433,13 +464,21 @@ svg {
 
 .slider_n {
   display: flex;
-  justify-items: center;
-  margin-left: 5rem;
-  margin-right: 5rem; }
+  justify-items: center; }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    z-index: 1; }
   .quienes_parra {
-    text-align: center; } }
+    text-align: center; }
+  .quienes {
+    flex-direction: column; }
+  .carousel button {
+    display: none; } }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #titulo_nos h1 {
+    padding-top: 3rem; } }
 
 .titulo_test {
   color: #F23838;
@@ -557,7 +596,20 @@ svg {
 @media screen and (max-width: 768px) {
   .formulario_t {
     margin-right: 1rem;
-    margin-left: 0rem; } }
+    margin-left: 0rem; }
+  .clientes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+  .testi_subtitulo {
+    margin-left: 0.2rem;
+    padding: 0rem;
+    display: flex;
+    align-items: center; } }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .titulo_test {
+    padding-top: 8rem; } }
 
 #titulo_cont {
   display: flex;
@@ -661,6 +713,16 @@ svg {
     margin-top: 1rem; }
     .texto_ubicacion svg {
       margin-left: 12rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #titulo_cont h1 {
+    padding-top: 7rem; }
+  .consulta {
+    height: 160px; }
+  .texto_ubicacion {
+    margin-top: 2rem; }
+  .texto_ubicacion svg {
+    margin-left: 10rem; } }
 
 a:active {
   position: relative;

@@ -137,4 +137,24 @@
         margin-left: 0rem;
     }
 
+    .clientes{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .testi_subtitulo{
+        margin-left: 0.2rem;
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .titulo_test{
+        padding-top: 8rem;
+    }
+
 }
