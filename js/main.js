@@ -28,55 +28,35 @@ function agregarProducto(){
 
 }
 
-agregarProducto()
-
-console.log(producto)
-
-
-// Login + opción de compra
-
 let user = prompt("Ingrese su usuario:")
 let password = prompt("Ingrese su contraseña:")
 
+    while( (user !== "AgustinK") && (password !== "Agus1234") ) {
 
-if( (user === "AgustinK") && (password === "Agus1234") ) {
+        alert("El usuario o la contraseña son incorrectos.")
 
-    alert("Bienvenido Agus! Ya puede iniciar su compra.")
+        user = prompt("Ingrese su usuario:")
+        password = prompt("Ingrese su contraseña:")
 
-    let compra = prompt("Qué desea comprar?")
-
-    let precio
-
-    while (compra.toLowerCase() != "nada") {
-
-        switch (compra.toLowerCase()){
-
-            case "porcelanatos":
-                precio = 5000
-                alert("El valor del porcelanato es: $" + precio)
-                break;
-            
-            case "ceramicas":
-                precio = 3000
-                alert("El valor de la cerámica es: $" + precio)
-                break;
-
-            case "pegamento":
-                precio = 500
-                alert("El valor del pegamento es: $" + precio)
-                break;
-            
-            default:
-                alert("No contamos con ese producto")
-                break;
         }
 
-        compra = prompt("Qué desea comprar?")
+        alert("Bienvenido Agus! Ya puede iniciar el proceso.")
+    
+    let ingreso = prompt("Desea agregar un producto?")
+    
+    if (ingreso.toLowerCase() !== "no"){
+            
+            agregarProducto()
+    
+        }else{
+
+            alert("El Ecommerce cuenta con " + producto.length + " productos")
         
-    } 
+        }
 
-}else{
+const resultado = producto.find((busqueda) => busqueda.nombre === prompt("Qué producto desea consultar?"))
 
-    alert("El usuario o la contraseña son incorrectos.")
+const liquidacion = producto.filter((busqueda) => busqueda.stock >= 200)
 
-}
+console.log(resultado)
+console.log(liquidacion)
